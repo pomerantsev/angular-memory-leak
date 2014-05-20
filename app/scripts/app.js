@@ -9,6 +9,10 @@ angular.module('angularMemoryLeaksApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/another', {
+        templateUrl: 'views/another.html',
+        controller: 'AnotherCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
